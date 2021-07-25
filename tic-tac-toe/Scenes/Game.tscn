@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/bg.png" type="Texture" id=1]
+[ext_resource path="res://Assets/grid.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/MousePosition.tscn" type="PackedScene" id=3]
+
+[node name="Game" type="Node2D"]
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 513.421, 300.971 )
+texture = ExtResource( 1 )
+
+[node name="Grid" type="Sprite" parent="."]
+position = Vector2( 510, 300 )
+texture = ExtResource( 2 )
+
+[node name="MousePosition0" parent="Grid" instance=ExtResource( 3 )]
+position = Vector2( -153.221, -143.197 )
+pos = 0
+
+[node name="MousePosition1" parent="Grid" instance=ExtResource( 3 )]
+position = Vector2( 1.43198, -143.197 )
+pos = 1
+
+[node name="MousePosition2" parent="Grid" instance=ExtResource( 3 )]
+position = Vector2( 154.653, -140.333 )
+pos = 2
+
+[node name="MousePosition3" parent="Grid" instance=ExtResource( 3 )]
+position = Vector2( -153.221, 3.05176e-05 )
+pos = 3
+
+[node name="MousePosition4" parent="Grid" instance=ExtResource( 3 )]
+position = Vector2( 1.43198, 0 )
+pos = 4
+
+[node name="MousePosition5" parent="Grid" instance=ExtResource( 3 )]
+position = Vector2( 148.925, -1.43198 )
+pos = 5
+
+[node name="MousePosition6" parent="Grid" instance=ExtResource( 3 )]
+position = Vector2( -157.517, 146.061 )
+pos = 6
+
+[node name="MousePosition7" parent="Grid" instance=ExtResource( 3 )]
+position = Vector2( -2.86395, 144.629 )
+pos = 7
+
+[node name="MousePosition8" parent="Grid" instance=ExtResource( 3 )]
+position = Vector2( 150.357, 146.061 )
+pos = 8
